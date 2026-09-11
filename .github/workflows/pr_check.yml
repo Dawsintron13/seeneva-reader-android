@@ -7,7 +7,7 @@ on:
       - develop
 
 env:
-  FORK: "${{ github.event.pull_request.head.repo.full_name != github.repository }}"
+  FORK: "true"
   APP_BUILD_TYPE: Release
   RELEASE_CANDIDATE: "${{ github.event.pull_request.head.repo.full_name == github.repository && github.base_ref == 'master' && startsWith(github.head_ref, 'release/') }}"
   BUNDLE_WITHOUT: development
