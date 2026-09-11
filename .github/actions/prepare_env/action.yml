@@ -9,10 +9,10 @@ runs:
       run: sudo apt install autopoint
 
     - name: Setup asdf
-      uses: asdf-vm/actions/setup@v3.0.2
+      uses: asdf-vm/actions/setup@v4
 
     - name: Install asdf plugins
-      uses: asdf-vm/actions/plugins-add@v3.0.2
+      uses: asdf-vm/actions/plugins-add@v4
 
     - name: Setup required Java
       shell: bash
